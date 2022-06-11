@@ -1,14 +1,13 @@
 import React from 'react';
-import {SafeAreaView, View, StyleSheet, Text} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import HomeScreen from './src/screens/HomeScreen';
 
 const App = () => {
   return (
     <SafeAreaView>
-      <Text>Welcome to Instagram Clone</Text>
+      <HomeScreen />
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({});
 
 export default App;
