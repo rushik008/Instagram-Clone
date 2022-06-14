@@ -1,10 +1,14 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const Footer = () => {
+import styles from './style';
+
+const Footer = ({likesCount, caption, postedAt}) => {
   return (
     <View>
-      <Text>Footer</Text>
+      <Text style={styles.likes}> {likesCount} Likes</Text>
+      <Text style={styles.caption}> {caption}</Text>
+      <Text style={styles.postedAt}> {postedAt}</Text>
     </View>
   );
 };

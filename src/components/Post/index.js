@@ -1,16 +1,20 @@
 import React from 'react';
 import {View} from 'react-native';
 
-import Body from './components/Body';
 import Header from './components/Header';
+import Body from './components/Body';
 import Footer from './components/Footer';
 
-const Post = ({post: {user}}) => {
+const Post = ({post}) => {
   return (
     <View>
-      <Header imageUri={user.imageUri} name={user.name} />
-      {/* <Body />
-      <Footer /> */}
+      <Header imageUri={post.user.imageUri} name={post.user.name} />
+      <Body imagePostUri={post.imagePostUri} />
+      <Footer
+        caption={post.caption}
+        likesCount={post.likesCount}
+        postedAt={post.postedAt}
+      />
     </View>
   );
 };
