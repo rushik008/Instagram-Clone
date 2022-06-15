@@ -2,6 +2,7 @@ import React from 'react';
 import {FlatList} from 'react-native';
 
 import Story from '../Story';
+import styles from './style';
 
 const data = [
   {
@@ -59,6 +60,7 @@ const data = [
 const Stories = () => {
   return (
     <FlatList
+      style={styles.container}
       data={data}
       horizontal
       showsHorizontalScrollIndicator={false}

@@ -2,6 +2,7 @@ import React from 'react';
 import {FlatList} from 'react-native';
 
 import Post from '../Post';
+import Stories from '../Stories';
 
 const data = [
   {
@@ -59,6 +60,7 @@ const Feed = () => {
       vertical
       showsVerticalScrollIndicators={false}
       renderItem={({item}) => <Post post={item} />}
+      ListHeaderComponent={Stories}
     />
   );
 };
