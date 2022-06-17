@@ -30,9 +30,11 @@ const Footer = ({likesCount: likesCountProp, caption, postedAt}) => {
     <View style={styles.container}>
       <View style={styles.iconContainer}>
         {/* View of left 3 icons : Like, Comment, Share */}
+
         <View style={styles.leftIcons}>
           <Pressable onPress={isLikedHandler}>
             {/* Changing heart icon according to the like and dislike */}
+
             {isLiked ? (
               <HeartIcon name="cards-heart" size={36} color="red" />
             ) : (
@@ -54,7 +56,7 @@ const Footer = ({likesCount: likesCountProp, caption, postedAt}) => {
       </View>
 
       <View>
-        <Text style={styles.likes}> {likesCount} Likes</Text>
+        <Text style={styles.likes}> {likesCount} likes</Text>
         <Text style={styles.caption}> {caption}</Text>
         <Text style={styles.postedAt}> {postedAt}</Text>
       </View>

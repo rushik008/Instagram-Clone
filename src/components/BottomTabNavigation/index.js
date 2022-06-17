@@ -3,11 +3,11 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 // importing screens
-import HomeScreen from './src/screens/HomeScreen';
-import DiscoveryScreen from './src/screens/DiscoveryScreen';
-import ReelsScreen from './src/screens/ReelsScreen';
-import NotificationScreen from './src/screens/NotificationScreen';
-import ProfileScreen from './src/screens/ProfileScreen';
+import HomeScreen from '../../screens/HomeScreen';
+import DiscoveryScreen from '../../screens/DiscoveryScreen';
+import ReelsScreen from '../../screens/ReelsScreen';
+import NotificationScreen from '../../screens/NotificationScreen';
+import ProfileScreen from '../../screens/ProfileScreen';
 
 // importing various icons
 import HomeIconFocused from 'react-native-vector-icons/Foundation';
