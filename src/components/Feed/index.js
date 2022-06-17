@@ -67,6 +67,7 @@ const Feed = () => {
       keyExtractor={({id}) => id}
       renderItem={({item}) => <Post post={item} />}
       ListHeaderComponent={Stories}
+      style={{backgroundColor: 'white'}}
     />
   );
 };

@@ -3,11 +3,12 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 // importing screens
-import HomeScreen from '../../screens/HomeScreen';
-import DiscoveryScreen from '../../screens/DiscoveryScreen';
-import ReelsScreen from '../../screens/ReelsScreen';
-import NotificationScreen from '../../screens/NotificationScreen';
-import ProfileScreen from '../../screens/ProfileScreen';
+import HomeScreen from '../../../screens/HomeScreen';
+import DiscoveryScreen from '../../../screens/DiscoveryScreen';
+import ReelsScreen from '../../../screens/ReelsScreen';
+import NotificationScreen from '../../../screens/NotificationScreen';
+import ProfileScreen from '../../../screens/ProfileScreen';
+import HomeStackScreen from '../TopStackNavigation';
 
 // importing various icons
 import HomeIconFocused from 'react-native-vector-icons/Foundation';
@@ -26,13 +27,13 @@ const BottomTabNavigation = () => {
           headerShown: false,
           tabBarShowLabel: false,
 
-          tabBarIcon: ({focused, color, size}) => {
+          tabBarIcon: ({focused}) => {
             // Home icon for Home Screen from Foundation and Octicons respectively
             if (route.name === 'Home') {
               return focused ? (
                 <HomeIconFocused name="home" size={32} color="black" />
               ) : (
-                <HomeIconOutline name="home" size={28} color="black" />
+                <HomeIconOutline name="home" size={25} color="black" />
               );
             }
 
@@ -63,17 +64,17 @@ const BottomTabNavigation = () => {
               );
             }
 
-            // Profile icon for Profle Screen from Ionicons
+            // Profile icon for Profile Screen from Ionicons
             else if (route.name === 'Profile') {
               return focused ? (
-                <Ionicon name="person" size={32} color="black" />
+                <Ionicon name="person" size={30} color="black" />
               ) : (
-                <Ionicon name="person-outline" size={32} color="black" />
+                <Ionicon name="person-outline" size={30} color="black" />
               );
             }
           },
         })}>
-        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Home" component={HomeStackScreen} />
         <Tab.Screen name="Discovery" component={DiscoveryScreen} />
         <Tab.Screen name="Reels" component={ReelsScreen} />
         <Tab.Screen name="Notification" component={NotificationScreen} />
