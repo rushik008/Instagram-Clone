@@ -8,21 +8,13 @@ const styles = StyleSheet.create({
   iconContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    padding: 5,
   },
 
   leftIcons: {
     flexDirection: 'row',
-    alignItems: 'center',
-  },
-
-  heartIcon: {
-    marginHorizontal: 5,
-  },
-  commentIcon: {
-    marginHorizontal: 5,
-  },
-  shareIcon: {
-    marginHorizontal: 5,
+    width: 120,
+    justifyContent: 'space-between',
   },
 
   likes: {
