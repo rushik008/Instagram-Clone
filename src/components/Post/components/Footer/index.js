@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, Pressable} from 'react-native';
 
+// importing various icons
 import HeartIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import CommentIcon from 'react-native-vector-icons/Ionicons';
 import ShareIcon from 'react-native-vector-icons/Ionicons';
@@ -28,8 +29,10 @@ const Footer = ({likesCount: likesCountProp, caption, postedAt}) => {
   return (
     <View style={styles.container}>
       <View style={styles.iconContainer}>
+        {/* View of left 3 icons : Like, Comment, Share */}
         <View style={styles.leftIcons}>
           <Pressable onPress={isLikedHandler}>
+            {/* Changing heart icon according to the like and dislike */}
             {isLiked ? (
               <HeartIcon name="cards-heart" size={36} color="red" />
             ) : (
@@ -37,10 +40,14 @@ const Footer = ({likesCount: likesCountProp, caption, postedAt}) => {
             )}
           </Pressable>
 
-          <CommentIcon st name="chatbubble-outline" size={32} color="black" />
+          {/* Comment icon from Ionicons */}
+          <CommentIcon name="chatbubble-outline" size={32} color="black" />
+
+          {/* Share icon from Ionicons */}
           <ShareIcon name="paper-plane-outline" size={33} color="black" />
         </View>
 
+        {/* View of right aligned 1 icon : Bookmark */}
         <View>
           <BookmarkIcon name="bookmark" size={35} color="black" />
         </View>
