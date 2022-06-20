@@ -1,14 +1,11 @@
 import React from 'react';
-import {View} from 'react-native';
-import {TextInput} from 'react-native-gesture-handler';
+import {View, Text, TextInput} from 'react-native';
 
+import styles from './style';
 // importing icons
 import SearchIcon from 'react-native-vector-icons/Ionicons';
 
-//importing styles
-import styles from './style';
-
-const ChatScreen = () => {
+const SearchBox = () => {
   return (
     <View style={styles.container}>
       <SearchIcon name="search" style={styles.searchIconStyle} />
@@ -17,4 +14,4 @@ const ChatScreen = () => {
   );
 };
 
-export default ChatScreen;
+export default SearchBox;

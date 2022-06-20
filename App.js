@@ -1,8 +1,8 @@
 import React from 'react';
-import BottomTabNavigation from './src/components/Navigation/BottomTabNavigation';
+import BottomTabNavigation from './src/components/Routes/BottomTabNavigation';
 
 const App = () => {
-  return <BottomTabNavigation/>;
+  return <BottomTabNavigation />;
 };
 
 export default App;

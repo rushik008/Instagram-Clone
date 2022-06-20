@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlatList} from 'react-native';
 
-import Story from '../Story';
+import UserStory from '../UserStory';
 import styles from './style';
 
 const data = [
@@ -57,7 +57,7 @@ const data = [
   },
 ];
 
-const Stories = () => {
+const UserStories = () => {
   return (
     <FlatList
       style={styles.container}
@@ -66,10 +66,10 @@ const Stories = () => {
       showsHorizontalScrollIndicator={false}
       keyExtractor={({name}) => name}
       renderItem={({item}) => (
-        <Story imageUri={item.imageUri} name={item.name} />
+        <UserStory imageUri={item.imageUri} name={item.name} />
       )}
     />
   );
 };
 
-export default Stories;
+export default UserStories;

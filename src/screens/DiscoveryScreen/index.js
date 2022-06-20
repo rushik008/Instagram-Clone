@@ -1,10 +1,16 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
+
+// importing screens
+import SearchBox from '../../components/DiscoveryComponents/SearchBox';
+
+// importing style
+import styles from './style';
 
 const DiscoveryScreen = () => {
   return (
-    <View>
-      <Text>Discovery Screen</Text>
+    <View style={styles.container}>
+      <SearchBox />
     </View>
   );
 };

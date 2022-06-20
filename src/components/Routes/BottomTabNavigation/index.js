@@ -8,7 +8,7 @@ import DiscoveryScreen from '../../../screens/DiscoveryScreen';
 import ReelsScreen from '../../../screens/ReelsScreen';
 import NotificationScreen from '../../../screens/NotificationScreen';
 import ProfileScreen from '../../../screens/ProfileScreen';
-import HomeStackScreen from '../TopStackNavigation';
+import HomeStackScreen from '../HomeStack';
 
 // importing various icons
 import HomeIconFocused from 'react-native-vector-icons/Foundation';
@@ -29,7 +29,7 @@ const BottomTabNavigation = () => {
 
           tabBarIcon: ({focused}) => {
             // Home icon for Home Screen from Foundation and Octicons respectively
-            if (route.name === 'Home') {
+            if (route.name === 'HomeScreen') {
               return focused ? (
                 <HomeIconFocused name="home" size={32} color="black" />
               ) : (
@@ -74,7 +74,7 @@ const BottomTabNavigation = () => {
             }
           },
         })}>
-        <Tab.Screen name="Home" component={HomeStackScreen} />
+        <Tab.Screen name="HomeScreen" component={HomeStackScreen} />
         <Tab.Screen name="Discovery" component={DiscoveryScreen} />
         <Tab.Screen name="Reels" component={ReelsScreen} />
         <Tab.Screen name="Notification" component={NotificationScreen} />

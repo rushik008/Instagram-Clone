@@ -10,8 +10,12 @@ const styles = StyleSheet.create({
   },
   image: {
     width: 140,
+    height: 50,
     resizeMode: 'contain',
     marginLeft: -8,
+  },
+  chatStack: {
+    backgroundColor: 'white',
   },
 });
 
