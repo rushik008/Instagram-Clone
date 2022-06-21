@@ -1,5 +1,4 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 // importing screens
@@ -20,67 +19,65 @@ const Tab = createBottomTabNavigator();
 
 const BottomTabNavigation = () => {
   return (
-    <NavigationContainer>
-      <Tab.Navigator
-        initialRouteName={HomeScreen}
-        screenOptions={({route}) => ({
-          headerShown: false,
-          tabBarShowLabel: false,
+    <Tab.Navigator
+      initialRouteName={HomeScreen}
+      screenOptions={({route}) => ({
+        headerShown: false,
+        tabBarShowLabel: false,
 
-          tabBarIcon: ({focused}) => {
-            // Home icon for Home Screen from Foundation and Octicons respectively
-            if (route.name === 'HomeScreen') {
-              return focused ? (
-                <HomeIconFocused name="home" size={32} color="black" />
-              ) : (
-                <HomeIconOutline name="home" size={25} color="black" />
-              );
-            }
+        tabBarIcon: ({focused}) => {
+          // Home icon for Home Screen from Foundation and Octicons respectively
+          if (route.name === 'HomeScreen') {
+            return focused ? (
+              <HomeIconFocused name="home" size={32} color="black" />
+            ) : (
+              <HomeIconOutline name="home" size={25} color="black" />
+            );
+          }
 
-            // Search icon for Discovery Screen from Ionicons
-            else if (route.name === 'Discovery') {
-              return focused ? (
-                <Ionicon name="md-search-sharp" size={32} color="black" />
-              ) : (
-                <Ionicon name="md-search-outline" size={32} color="black" />
-              );
-            }
+          // Search icon for Discovery Screen from Ionicons
+          else if (route.name === 'Discovery') {
+            return focused ? (
+              <Ionicon name="md-search-sharp" size={32} color="black" />
+            ) : (
+              <Ionicon name="md-search-outline" size={32} color="black" />
+            );
+          }
 
-            // Play icon for Reels Screen from Ionicons
-            else if (route.name === 'Reels') {
-              return focused ? (
-                <Ionicon name="play-sharp" size={32} color="black" />
-              ) : (
-                <Ionicon name="play-outline" size={32} color="black" />
-              );
-            }
+          // Play icon for Reels Screen from Ionicons
+          else if (route.name === 'Reels') {
+            return focused ? (
+              <Ionicon name="play-sharp" size={32} color="black" />
+            ) : (
+              <Ionicon name="play-outline" size={32} color="black" />
+            );
+          }
 
-            // Heart icon for Notification Screen from MaterialCommunityIcons
-            else if (route.name === 'Notification') {
-              return focused ? (
-                <HeartIcon name="cards-heart" size={32} color="black" />
-              ) : (
-                <HeartIcon name="cards-heart-outline" size={32} color="black" />
-              );
-            }
+          // Heart icon for Notification Screen from MaterialCommunityIcons
+          else if (route.name === 'Notification') {
+            return focused ? (
+              <HeartIcon name="cards-heart" size={32} color="black" />
+            ) : (
+              <HeartIcon name="cards-heart-outline" size={32} color="black" />
+            );
+          }
 
-            // Profile icon for Profile Screen from Ionicons
-            else if (route.name === 'Profile') {
-              return focused ? (
-                <Ionicon name="person" size={30} color="black" />
-              ) : (
-                <Ionicon name="person-outline" size={30} color="black" />
-              );
-            }
-          },
-        })}>
-        <Tab.Screen name="HomeScreen" component={HomeStackScreen} />
-        <Tab.Screen name="Discovery" component={DiscoveryScreen} />
-        <Tab.Screen name="Reels" component={ReelsScreen} />
-        <Tab.Screen name="Notification" component={NotificationScreen} />
-        <Tab.Screen name="Profile" component={ProfileScreen} />
-      </Tab.Navigator>
-    </NavigationContainer>
+          // Profile icon for Profile Screen from Ionicons
+          else if (route.name === 'Profile') {
+            return focused ? (
+              <Ionicon name="person" size={30} color="black" />
+            ) : (
+              <Ionicon name="person-outline" size={30} color="black" />
+            );
+          }
+        },
+      })}>
+      <Tab.Screen name="HomeScreen" component={HomeStackScreen} />
+      <Tab.Screen name="Discovery" component={DiscoveryScreen} />
+      <Tab.Screen name="Reels" component={ReelsScreen} />
+      <Tab.Screen name="Notification" component={NotificationScreen} />
+      <Tab.Screen name="Profile" component={ProfileScreen} />
+    </Tab.Navigator>
   );
 };
 

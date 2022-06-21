@@ -1,8 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 
-// importing screens
-import SearchBox from '../../components/DiscoveryComponents/SearchBox';
+import SearchBox from '../../components/SearchBox';
 
 // importing style
 import styles from './style';

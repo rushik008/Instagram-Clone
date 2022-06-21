@@ -1,8 +1,10 @@
 import React from 'react';
-import BottomTabNavigation from './src/components/Routes/BottomTabNavigation';
+
+// importing screens
+import RootStackScreen from './src/components/Routes';
 
 const App = () => {
-  return <BottomTabNavigation />;
+  return <RootStackScreen />;
 };
 
 export default App;
