@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const VideoCall = () => {
+const AddPostScreen = () => {
   return (
     <View>
-      <Text>Video Call</Text>
+      <Text>Add Post Screen</Text>
     </View>
   );
 };
 
-export default VideoCall;
+export default AddPostScreen;

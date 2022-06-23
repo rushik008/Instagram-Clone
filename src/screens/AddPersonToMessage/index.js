@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const AddPersonToMessage = () => {
+const AddPersonToMessageScreen = () => {
   return (
     <View>
       <Text>Add Person To Message</Text>
@@ -9,4 +9,4 @@ const AddPersonToMessage = () => {
   );
 };
 
-export default AddPersonToMessage;
+export default AddPersonToMessageScreen;

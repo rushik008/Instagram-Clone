@@ -7,12 +7,21 @@ import ProfilePicture from '../ProfilePicture';
 
 import styles from './style';
 
-const UserStory = ({imageUri, name}) => {
+const UserStory = props => {
+  const {
+    story: {
+      user: {imageUri, name},
+    },
+  } = props;
+
   const navigation = useNavigation();
+
+  const onPress = () => {
+    navigation.navigate('Story Stack');
+  };
+
   return (
-    <Pressable
-      style={styles.container}
-      onPress={() => navigation.navigate('Story Stack')}>
+    <Pressable style={styles.container} onPress={onPress}>
       <View>
         <ProfilePicture uri={imageUri} />
         <Text style={styles.name}>{name}</Text>

@@ -1,19 +1,13 @@
 import React from 'react';
-import {View} from 'react-native';
+
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 
 // importing screens
 import BottomTabNavigation from './BottomTabNavigation';
-import ChatScreen from '../../screens/ChatScreen';
+import ChatStackScreen from './ChatStackScreen';
 import StoryScreen from '../../screens/StoryScreen';
-
-// importing icons
-import PlusIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-import VideoIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-
-// importing styles
-import styles from './style';
+import AddPostStackScreen from './AddPostStack';
 
 const RootStackScreen = () => {
   const RootStack = createStackNavigator();
@@ -30,6 +24,13 @@ const RootStackScreen = () => {
         />
 
         <RootStack.Screen
+          name="Chat Stack"
+          component={ChatStackScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+        {/* <RootStack.Screen
           name="Chat Stack"
           component={ChatScreen}
           options={{
@@ -48,11 +49,19 @@ const RootStackScreen = () => {
               );
             },
           }}
-        />
+        /> */}
 
         <RootStack.Screen
           name="Story Stack"
           component={StoryScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+
+        <RootStack.Screen
+          name="Add Post Stack"
+          component={AddPostStackScreen}
           options={{
             headerShown: false,
           }}

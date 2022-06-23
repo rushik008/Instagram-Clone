@@ -34,14 +34,18 @@ const HomeStackScreen = () => {
             return (
               // View for right aligned 2 icons of top bar
               <View style={styles.rightIcons}>
-                <PlusIconSquare name="plus-square" size={30} color="black" />
+                <PlusIconSquare
+                  name="plus-square"
+                  size={30}
+                  color="black"
+                  onPress={() => navigation.navigate('Add Post Stack')}
+                />
                 <Ionicon
                   name="paper-plane-outline"
                   size={30}
                   color="black"
                   // calling chat stack which is define in the root stack screen
                   // as we don't want to show bottom navigation bar
-
                   onPress={() => navigation.navigate('Chat Stack')}
                 />
               </View>

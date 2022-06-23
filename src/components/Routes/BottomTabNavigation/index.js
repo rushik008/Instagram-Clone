@@ -3,7 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 // importing screens
 import HomeScreen from '../../../screens/HomeScreen';
-import DiscoveryScreen from '../../../screens/DiscoveryScreen';
+import SearchScreen from '../../../screens/SearchScreen';
 import ReelsScreen from '../../../screens/ReelsScreen';
 import NotificationScreen from '../../../screens/NotificationScreen';
 import ProfileScreen from '../../../screens/ProfileScreen';
@@ -36,7 +36,7 @@ const BottomTabNavigation = () => {
           }
 
           // Search icon for Discovery Screen from Ionicons
-          else if (route.name === 'Discovery') {
+          else if (route.name === 'SearchScreen') {
             return focused ? (
               <Ionicon name="md-search-sharp" size={32} color="black" />
             ) : (
@@ -73,7 +73,7 @@ const BottomTabNavigation = () => {
         },
       })}>
       <Tab.Screen name="HomeScreen" component={HomeStackScreen} />
-      <Tab.Screen name="Discovery" component={DiscoveryScreen} />
+      <Tab.Screen name="SearchScreen" component={SearchScreen} />
       <Tab.Screen name="Reels" component={ReelsScreen} />
       <Tab.Screen name="Notification" component={NotificationScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
