@@ -1,13 +1,14 @@
 import React from 'react';
-
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 
 // importing screens
 import BottomTabNavigation from './BottomTabNavigation';
 import ChatStackScreen from './ChatStackScreen';
+import AddPersonToMessageScreen from '../../screens/AddPersonToMessage';
 import StoryScreen from '../../screens/StoryScreen';
 import AddPostStackScreen from './AddPostStack';
+import EditProfileScreen from '../../screens/EditProfileScreen';
 
 const RootStackScreen = () => {
   const RootStack = createStackNavigator();
@@ -30,6 +31,14 @@ const RootStackScreen = () => {
             headerShown: false,
           }}
         />
+
+        <RootStack.Screen
+          name="Add Person To Message Stack"
+          component={AddPersonToMessageScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
         {/* <RootStack.Screen
           name="Chat Stack"
           component={ChatScreen}
@@ -39,14 +48,14 @@ const RootStackScreen = () => {
               return (
                 // View for right aligned 2 icons of top bar
                 <View style={styles.rightIcons}>
-                  <VideoIcon
-                    name="video-plus-outline"
+                <VideoIcon
+                name="video-plus-outline"
                     size={32}
                     color="black"
                   />
                   <PlusIcon name="plus" size={30} color="black" />
                 </View>
-              );
+                );
             },
           }}
         /> */}
@@ -62,6 +71,14 @@ const RootStackScreen = () => {
         <RootStack.Screen
           name="Add Post Stack"
           component={AddPostStackScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+
+        <RootStack.Screen
+          name="Edit Profile Stack"
+          component={EditProfileScreen}
           options={{
             headerShown: false,
           }}

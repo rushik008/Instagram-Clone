@@ -6,7 +6,7 @@ import HomeScreen from '../../../screens/HomeScreen';
 import SearchScreen from '../../../screens/SearchScreen';
 import ReelsScreen from '../../../screens/ReelsScreen';
 import NotificationScreen from '../../../screens/NotificationScreen';
-import ProfileScreen from '../../../screens/ProfileScreen';
+import ProfileStackScreen from '../ProfileStackScreen';
 import HomeStackScreen from '../HomeStack';
 
 // importing various icons
@@ -22,7 +22,6 @@ const BottomTabNavigation = () => {
     <Tab.Navigator
       initialRouteName={HomeScreen}
       screenOptions={({route}) => ({
-        headerShown: false,
         tabBarShowLabel: false,
 
         tabBarIcon: ({focused}) => {
@@ -72,11 +71,41 @@ const BottomTabNavigation = () => {
           }
         },
       })}>
-      <Tab.Screen name="HomeScreen" component={HomeStackScreen} />
-      <Tab.Screen name="SearchScreen" component={SearchScreen} />
-      <Tab.Screen name="Reels" component={ReelsScreen} />
-      <Tab.Screen name="Notification" component={NotificationScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen
+        name="HomeScreen"
+        component={HomeStackScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Tab.Screen
+        name="SearchScreen"
+        component={SearchScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Tab.Screen
+        name="Reels"
+        component={ReelsScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Tab.Screen
+        name="Notification"
+        component={NotificationScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={ProfileStackScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
     </Tab.Navigator>
   );
 };

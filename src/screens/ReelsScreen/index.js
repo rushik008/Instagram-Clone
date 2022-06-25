@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, ImageStore, ImageBackground} from 'react-native';
+import {View, ImageBackground} from 'react-native';
 
 // importing icons
 import CameraIcon from 'react-native-vector-icons/Feather';

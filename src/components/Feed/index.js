@@ -1,5 +1,5 @@
 import React from 'react';
-import {FlatList} from 'react-native';
+import {FlatList, View} from 'react-native';
 
 import Post from '../Post';
 import Stories from '../UserStories';
@@ -60,15 +60,17 @@ const data = [
 
 const Feed = () => {
   return (
-    <FlatList
-      data={data}
-      vertical
-      showsVerticalScrollIndicators={false}
-      keyExtractor={({id}) => id}
-      renderItem={({item}) => <Post post={item} />}
-      ListHeaderComponent={Stories}
-      style={{backgroundColor: 'white'}}
-    />
+    <View>
+      <FlatList
+        data={data}
+        vertical
+        showsVerticalScrollIndicators={false}
+        keyExtractor={({id}) => id}
+        renderItem={({item}) => <Post post={item} />}
+        ListHeaderComponent={Stories}
+        style={{backgroundColor: 'white'}}
+      />
+    </View>
   );
 };
 

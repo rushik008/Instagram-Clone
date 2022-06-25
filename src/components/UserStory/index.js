@@ -8,6 +8,7 @@ import ProfilePicture from '../ProfilePicture';
 import styles from './style';
 
 const UserStory = props => {
+  
   const {
     story: {
       user: {imageUri, name},

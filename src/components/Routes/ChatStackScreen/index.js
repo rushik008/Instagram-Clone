@@ -34,7 +34,14 @@ const ChatStackScreen = () => {
                   color="black"
                   onPress={() => navigation.navigate('Video Call Stack')}
                 />
-                <PlusIcon name="plus" size={30} color="black" />
+                <PlusIcon
+                  name="plus"
+                  size={30}
+                  color="black"
+                  onPress={() =>
+                    navigation.navigate('Add Person To Message Stack')
+                  }
+                />
               </View>
             );
           },

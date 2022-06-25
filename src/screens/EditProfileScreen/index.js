@@ -1,14 +1,15 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
+// importing styles
 import styles from './style';
 
-const NotificationScreen = () => {
+const EditProfileScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Notification Screen</Text>
+      <Text style={styles.text}>Edit Profile Screen</Text>
     </View>
   );
 };
 
-export default NotificationScreen;
+export default EditProfileScreen;
