@@ -4,11 +4,12 @@ import {NavigationContainer} from '@react-navigation/native';
 
 // importing screens
 import BottomTabNavigation from './BottomTabNavigation';
+import AddPersonToMessageScreen from '../screens/AddPersonToMessage';
+import StoryScreen from '../screens/StoryScreen';
+import EditProfileScreen from '../screens/EditProfileScreen';
+
 import ChatStackScreen from './ChatStackScreen';
-import AddPersonToMessageScreen from '../../screens/AddPersonToMessage';
-import StoryScreen from '../../screens/StoryScreen';
 import AddPostStackScreen from './AddPostStack';
-import EditProfileScreen from '../../screens/EditProfileScreen';
 
 const RootStackScreen = () => {
   const RootStack = createStackNavigator();
@@ -39,26 +40,6 @@ const RootStackScreen = () => {
             headerShown: false,
           }}
         />
-        {/* <RootStack.Screen
-          name="Chat Stack"
-          component={ChatScreen}
-          options={{
-            headerTitle: 'rushik_rathod_',
-            headerRight: () => {
-              return (
-                // View for right aligned 2 icons of top bar
-                <View style={styles.rightIcons}>
-                <VideoIcon
-                name="video-plus-outline"
-                    size={32}
-                    color="black"
-                  />
-                  <PlusIcon name="plus" size={30} color="black" />
-                </View>
-                );
-            },
-          }}
-        /> */}
 
         <RootStack.Screen
           name="Story Stack"
@@ -89,3 +70,26 @@ const RootStackScreen = () => {
 };
 
 export default RootStackScreen;
+
+{
+  /* <RootStack.Screen
+          name="Chat Stack"
+          component={ChatScreen}
+          options={{
+            headerTitle: 'rushik_rathod_',
+            headerRight: () => {
+              return (
+                // View for right aligned 2 icons of top bar
+                <View style={styles.rightIcons}>
+                <VideoIcon
+                name="video-plus-outline"
+                    size={32}
+                    color="black"
+                  />
+                  <PlusIcon name="plus" size={30} color="black" />
+                </View>
+                );
+            },
+          }}
+        /> */
+}

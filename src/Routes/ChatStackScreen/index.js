@@ -4,14 +4,15 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {useNavigation} from '@react-navigation/native';
 
 // importing screens
-import ChatScreen from '../../../screens/ChatScreen';
+import ChatScreen from '../../screens/ChatScreen';
+import VideoCallScreen from '../../screens/VideoCall';
 
 // importing icons
 import PlusIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import VideoIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 
+// importing styles
 import styles from './style';
-import VideoCallScreen from '../../../screens/VideoCall';
 
 const ChatStackScreen = () => {
   const ChatStack = createStackNavigator();

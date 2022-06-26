@@ -20,7 +20,7 @@ const EditProfile = () => {
       <DiscoverPeopleIcon
         style={styles.discoverPeopleIcon}
         name="person-add-outline"
-        size={18}
+        size={15}
       />
     </View>
   );

@@ -3,7 +3,7 @@ import {Text, View} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 
 // importing screens
-import ProfileScreen from '../../../screens/ProfileScreen';
+import ProfileScreen from '../../screens/ProfileScreen';
 
 // importing icons
 import LockIcon from 'react-native-vector-icons/Feather';

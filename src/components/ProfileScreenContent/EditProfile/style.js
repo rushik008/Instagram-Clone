@@ -5,29 +5,29 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 3,
-    width: Dimensions.get('window').width,
+    marginHorizontal: 5,
+    marginTop: 20,
   },
 
   pressableButton: {
     padding: 5,
     borderRadius: 10,
-    width: '85%',
+    width: '95%',
     backgroundColor: 'gainsboro',
   },
 
   text: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: '500',
     color: 'black',
     textAlign: 'center',
   },
 
   discoverPeopleIcon: {
     color: 'black',
-    padding: 5,
+    padding: 8,
     borderRadius: 10,
-    margin: 8,
+    marginLeft: 5,
     backgroundColor: 'gainsboro',
   },
 });

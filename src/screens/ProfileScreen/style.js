@@ -3,11 +3,11 @@ import {StyleSheet, Dimensions} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
+    padding: 10,
   },
 
   upperContainer: {
     flexDirection: 'row',
-    padding: 10,
     width: Dimensions.get('window').width,
   },
 

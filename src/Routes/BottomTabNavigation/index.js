@@ -2,10 +2,11 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 // importing screens
-import HomeScreen from '../../../screens/HomeScreen';
-import SearchScreen from '../../../screens/SearchScreen';
-import ReelsScreen from '../../../screens/ReelsScreen';
-import NotificationScreen from '../../../screens/NotificationScreen';
+import HomeScreen from '../../screens/HomeScreen';
+import SearchScreen from '../../screens/SearchScreen';
+import ReelsScreen from '../../screens/ReelsScreen';
+import NotificationScreen from '../../screens/NotificationScreen';
+
 import ProfileStackScreen from '../ProfileStackScreen';
 import HomeStackScreen from '../HomeStack';
 
@@ -78,6 +79,7 @@ const BottomTabNavigation = () => {
           headerShown: false,
         }}
       />
+
       <Tab.Screen
         name="SearchScreen"
         component={SearchScreen}

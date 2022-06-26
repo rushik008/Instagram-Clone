@@ -2,9 +2,11 @@ import React from 'react';
 import {View, Text} from 'react-native';
 
 // importing screens
-import UserProfileImage from '../../components/Profile/UserProfileImage';
-import UserDetails from '../../components/Profile/UserDetails';
-import EditProfile from '../../components/Profile/EditProfile';
+import UserProfileImage from '../../components/ProfileScreenContent/UserProfileImage';
+import UserDetails from '../../components/ProfileScreenContent/UserDetails';
+import EditProfile from '../../components/ProfileScreenContent/EditProfile';
+import StoryHighlights from '../../components/ProfileScreenContent/StoryHighlights';
+import TopNavigationBar from '../../components/ProfileScreenContent/TopNavigationBar';
 
 // importing data
 import userData from '../../data/user';
@@ -18,8 +20,9 @@ const ProfileScreen = () => {
 
   return (
     <View style={styles.container}>
-      {/* upperContainer containes user's profile image, name and social details. */}
       <View style={styles.upperContainer}>
+        {/* upperContainer containes user's profile image, name and social details. */}
+
         <View style={styles.leftContainer}>
           <UserProfileImage userProfile={userProfile} />
           <Text style={styles.name}>{name}</Text>
@@ -33,6 +36,8 @@ const ProfileScreen = () => {
       </View>
 
       <EditProfile />
+      <StoryHighlights />
+      <TopNavigationBar />
     </View>
   );
 };

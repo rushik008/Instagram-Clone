@@ -4,7 +4,7 @@ import {useNavigation} from '@react-navigation/native';
 import {View, Image} from 'react-native';
 
 // importing screens
-import HomeScreen from '../../../screens/HomeScreen';
+import HomeScreen from '../../screens/HomeScreen';
 
 // importing icons
 import PlusIconSquare from 'react-native-vector-icons/Feather';
@@ -12,7 +12,7 @@ import Ionicon from 'react-native-vector-icons/Ionicons';
 
 // importing styles
 import styles from './style';
-import logo from '../../../assets/images/logo/instagram.png';
+import logo from '../../assets/images/logo/instagram.png';
 
 const HomeStackScreen = () => {
   const HomeStack = createStackNavigator();
