@@ -1,4 +1,22 @@
-const staticImage1 =
-  'https://images.unsplash.com/photo-1590099914662-a76f2f83b802?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8OSUzQTE2fGVufDB8fDB8fA%3D%3D&w=1000&q=80';
-
-export default [{reelsImage: staticImage1}];
+export default [
+  {
+    reelsImage:
+      'https://images.unsplash.com/photo-1590099914662-a76f2f83b802?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8OSUzQTE2fGVufDB8fDB8fA%3D%3D&w=1000&q=80',
+  },
+  {
+    reelsImage:
+      'https://theworldpursuit.com/wp-content/uploads/2020/04/Best-Road-Trips-in-the-world-scaled.jpeg',
+  },
+  {
+    reelsImage:
+      'https://i.pinimg.com/236x/b9/c4/fe/b9c4fe0e50182d388979d01e97879709.jpg',
+  },
+  {
+    reelsImage:
+      'https://askforadventure.com/wp-content/uploads/2021/09/nature-captions-12-604x1024.jpg.webp',
+  },
+  {
+    reelsImage:
+      'https://images.unsplash.com/photo-1531887259712-aa6e090e9289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW5zdGFncmFtJTIwcmVlbHN8ZW58MHx8MHx8&w=1000&q=80',
+  },
+];

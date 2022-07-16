@@ -2,7 +2,7 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
 // importing screens
-import EditProfileScreen from '../../../screens/EditProfileScreen';
+import EditProfileScreen from '../../screens/EditProfileScreen';
 
 const EditProfileStackScreen = () => {
   const EditProfileStack = createStackNavigator();

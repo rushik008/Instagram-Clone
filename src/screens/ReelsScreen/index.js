@@ -16,7 +16,7 @@ const image = {
 
 const ReelsScreen = () => {
   return (
-    <View style={styles.container}>
+    <View stye={styles.container}>
       <ImageBackground source={image} resizeMode="cover" style={styles.image} />
 
       {/* <CameraIcon name="camera" size={36} color="white" />

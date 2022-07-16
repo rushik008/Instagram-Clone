@@ -15,12 +15,13 @@ import PlusIcon from 'react-native-vector-icons/EvilIcons';
 const SearchScreen = () => {
   return (
     <View style={styles.container}>
-      <SearchBox />
+      {/* <SearchBox /> */}
 
       <FlatList
         numColumns={3}
         data={searchData}
         keyExtractor={(item, index) => index.toString()}
+        ListHeaderComponent={<SearchBox />}
         renderItem={({item}) => (
           <DisplaySearchContent oneImage={item} />
         )}></FlatList>

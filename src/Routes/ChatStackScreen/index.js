@@ -5,7 +5,7 @@ import {useNavigation} from '@react-navigation/native';
 
 // importing screens
 import ChatScreen from '../../screens/ChatScreen';
-import VideoCallScreen from '../../screens/VideoCall';
+import VideoCallScreen from '../../screens/VideoCallScreen';
 
 // importing icons
 import PlusIcon from 'react-native-vector-icons/MaterialCommunityIcons';
