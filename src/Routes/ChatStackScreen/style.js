@@ -8,6 +8,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 10,
   },
+
+  textStyle: {
+    marginLeft: -10,
+    fontWeight: 'bold',
+    fontSize: 20,
+    color: 'black',
+  },
 });
 
 export default styles;

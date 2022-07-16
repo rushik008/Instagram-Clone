@@ -25,7 +25,7 @@ const ProfileStackScreen = () => {
           headerTitle: () => {
             return (
               <View style={styles.container}>
-                <LockIcon name="lock" size={20} color="black" />
+                <LockIcon name="lock" size={15} color="black" />
                 <Text style={styles.textStyle}>rushik_rathod_</Text>
               </View>
             );
@@ -34,10 +34,10 @@ const ProfileStackScreen = () => {
           headerRight: () => {
             return (
               <View style={styles.rightIcons}>
-                <PlusIconSquare name="plus-square" size={30} color="black" />
+                <PlusIconSquare name="plus-square" size={25} color="black" />
                 <ThreeLineIcon
-                  name="reorder-three-outline"
-                  size={45}
+                  name="md-reorder-three-outline"
+                  size={35}
                   color="black"
                 />
               </View>

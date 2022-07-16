@@ -5,7 +5,7 @@ import {View, Text} from 'react-native';
 import ProfilePicture from '../../ProfilePicture';
 
 // importing icons
-import Icon from 'react-native-vector-icons/Entypo';
+import SettingIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import styles from './style';
 
@@ -18,7 +18,7 @@ const Header = ({imageUri, name}) => {
       </View>
 
       <View style={styles.rightContent}>
-        <Icon name="dots-three-vertical" size={20} color="black" />
+        <SettingIcon name="dots-vertical" size={20} color="black" />
       </View>
     </View>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 
+// importing components
 import Header from './Header';
 import Body from './Body';
 import Footer from './Footer';

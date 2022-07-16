@@ -56,6 +56,31 @@ const data = [
     likesCount: 3578910,
     postedAt: '10 minutes ago',
   },
+  {
+    id: '5',
+    user: {
+      imageUri:
+        'https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BpZGVybWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80',
+      name: 'spiderman',
+    },
+    imagePostUri: 'https://wallpaperaccess.com/full/1279436.jpg',
+    caption: 'Coming soon...',
+    likesCount: 35880,
+    postedAt: '15 minutes ago',
+  },
+  {
+    id: '6',
+    user: {
+      imageUri:
+        'https://pbs.twimg.com/profile_images/1247482752351588352/EgHoUNqQ_400x400.jpg',
+      name: 'chrishemworth',
+    },
+    imagePostUri:
+      'https://m.economictimes.com/thumb/msid-91981734,width-1200,height-900,resizemode-4,imgsize-111746/the-film-will-be-released-in-india-a-day-earlier-than-previously-planned-.jpg',
+    caption: 'Thor Love and Thunder Coming soon...',
+    likesCount: 5345880,
+    postedAt: '30 minutes ago',
+  },
 ];
 
 const Feed = () => {

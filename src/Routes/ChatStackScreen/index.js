@@ -1,5 +1,5 @@
 import React from 'react';
-import {View} from 'react-native';
+import {View, Text} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {useNavigation} from '@react-navigation/native';
 
@@ -14,30 +14,39 @@ import VideoIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 // importing styles
 import styles from './style';
 
+// importing data
+import userData from '../../data/user';
+
 const ChatStackScreen = () => {
   const ChatStack = createStackNavigator();
 
   const navigation = useNavigation();
+
+  // destructuring the object
+  const {userName} = userData;
+
   return (
     <ChatStack.Navigator>
       <ChatStack.Screen
         name={'Chat Stack 1'}
         component={ChatScreen}
         options={{
-          headerTitle: 'rushik_rathod_',
+          headerTitle: () => {
+            return <Text style={styles.textStyle}>{userName}</Text>;
+          },
           headerRight: () => {
             return (
               // View for right aligned 2 icons of top bar
               <View style={styles.rightIcons}>
                 <VideoIcon
                   name="video-plus-outline"
-                  size={32}
+                  size={28}
                   color="black"
                   onPress={() => navigation.navigate('Video Call Stack')}
                 />
                 <PlusIcon
                   name="plus"
-                  size={30}
+                  size={28}
                   color="black"
                   onPress={() =>
                     navigation.navigate('Add Person To Message Stack')

@@ -8,9 +8,6 @@ import UserReels from '../UserReels';
 import UserVideos from '../UserReels';
 import UserTags from '../UserTags';
 
-// importing style
-import styles from './style';
-
 // importing icons
 import GridIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import PlayIcon from 'react-native-vector-icons/Ionicons';
@@ -18,6 +15,9 @@ import PlayIcon from 'react-native-vector-icons/Ionicons';
 // importing logo
 import ReelsLogo from '../../../assets/images/logo/reels.png';
 import TagLogo from '../../../assets/images/logo/tag.png';
+
+// importing style
+import styles from './style';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -49,7 +49,7 @@ const TopNavigationBar = () => {
         component={UserVideos}
         options={{
           title: () => {
-            return <PlayIcon name="play-outline" size={22} color="black" />;
+            return <PlayIcon name="play-outline" size={25} color="black" />;
           },
         }}
       />

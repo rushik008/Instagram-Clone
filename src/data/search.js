@@ -2,7 +2,6 @@ const staticImage1 =
   'https://cdn.shopify.com/s/files/1/0062/8083/9232/products/iron-man-mark7_620x.jpg?v=1637227128';
 const staticImage2 =
   'https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&s=612x612&w=0&h=i38qBm2P-6V4vZVEaMy_TaTEaoCMkYhvLCysE7yJQ5Q=';
-
 const staticImage3 =
   'https://blog.playstation.com/tachyon/2022/06/0c3c20a8d8514501524a0859461f391572ea6e61.jpg';
 const staticImage4 =

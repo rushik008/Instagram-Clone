@@ -8,12 +8,13 @@ const styles = StyleSheet.create({
   iconContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
     padding: 5,
   },
 
   leftIcons: {
     flexDirection: 'row',
-    width: 120,
+    width: 110,
     justifyContent: 'space-between',
   },
 

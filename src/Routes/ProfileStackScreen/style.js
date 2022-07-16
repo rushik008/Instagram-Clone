@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   textStyle: {
     marginLeft: 8,
     fontWeight: 'bold',
-    fontSize: 22,
+    fontSize: 20,
     color: 'black',
   },
 });

@@ -13,7 +13,6 @@ import HomeStackScreen from '../HomeStack';
 // importing various icons
 import HomeIconFocused from 'react-native-vector-icons/Foundation';
 import HomeIconOutline from 'react-native-vector-icons/Octicons';
-import HeartIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicon from 'react-native-vector-icons/Ionicons';
 
 const Tab = createBottomTabNavigator();
@@ -26,48 +25,48 @@ const BottomTabNavigation = () => {
         tabBarShowLabel: false,
 
         tabBarIcon: ({focused}) => {
-          // Home icon for Home Screen from Foundation and Octicons respectively
+          // HOME ICON
           if (route.name === 'HomeScreen') {
             return focused ? (
-              <HomeIconFocused name="home" size={32} color="black" />
+              <HomeIconFocused name="home" size={25} color="black" />
             ) : (
-              <HomeIconOutline name="home" size={25} color="black" />
+              <HomeIconOutline name="home" size={20} color="black" />
             );
           }
 
-          // Search icon for Discovery Screen from Ionicons
+          // SEARCH ICON
           else if (route.name === 'SearchScreen') {
             return focused ? (
-              <Ionicon name="md-search-sharp" size={32} color="black" />
+              <Ionicon name="md-search" size={25} color="black" />
             ) : (
-              <Ionicon name="md-search-outline" size={32} color="black" />
+              <Ionicon name="md-search-outline" size={25} color="black" />
             );
           }
 
-          // Play icon for Reels Screen from Ionicons
+          // PLAY ICON
           else if (route.name === 'Reels') {
             return focused ? (
-              <Ionicon name="play-sharp" size={32} color="black" />
+              <Ionicon name="play" size={25} color="black" />
             ) : (
-              <Ionicon name="play-outline" size={32} color="black" />
+              <Ionicon name="play-outline" size={25} color="black" />
             );
           }
 
-          // Heart icon for Notification Screen from MaterialCommunityIcons
+          // HEART ICON
           else if (route.name === 'Notification') {
             return focused ? (
-              <HeartIcon name="cards-heart" size={32} color="black" />
+              <Ionicon name="heart" size={25} color="black" />
             ) : (
-              <HeartIcon name="cards-heart-outline" size={32} color="black" />
+              <Ionicon name="heart-outline" size={25} color="black" />
             );
           }
 
-          // Profile icon for Profile Screen from Ionicons
+          // PROFILE ICON
           else if (route.name === 'Profile') {
             return focused ? (
-              <Ionicon name="person" size={30} color="black" />
+              <Ionicon name="person" size={20} color="black" />
             ) : (
-              <Ionicon name="person-outline" size={30} color="black" />
+              <Ionicon name="person-outline" size={20} color="black" />
             );
           }
         },
