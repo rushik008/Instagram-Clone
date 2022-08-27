@@ -71,6 +71,7 @@ const BottomTabNavigation = () => {
           }
         },
       })}>
+        
       <Tab.Screen
         name="HomeScreen"
         component={HomeStackScreen}

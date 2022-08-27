@@ -23,7 +23,7 @@ const Tab = createMaterialTopTabNavigator();
 
 const TopNavigationBar = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator initialRouteName={UserPosts}>
       <Tab.Screen
         name="Posts"
         component={UserPosts}

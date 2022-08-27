@@ -12,6 +12,7 @@ import ChatStackScreen from './ChatStackScreen';
 import AddPostStackScreen from './AddPostStack';
 
 const RootStackScreen = () => {
+  
   const RootStack = createStackNavigator();
 
   return (
