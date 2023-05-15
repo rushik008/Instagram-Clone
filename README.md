@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/rushik008/Instagram-Clone">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/rushik008/Instagram-Clone/assets/101036053/d4d50f35-6608-4c99-a27b-cf5d6a84c001" alt="Instagram Logo" width="80px" height="80px">
   </a>
 
   <h3 align="center">Instagram Clone</h3>
@@ -19,13 +19,11 @@
 
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
+* [Project Screenshots](#project-screenshots)
 * [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
 
 ## About The Project
-
-![Instagram_icon png](https://github.com/rushik008/Instagram-Clone/assets/101036053/d4d50f35-6608-4c99-a27b-cf5d6a84c001)
-
 
 Project Title: Instagram Clone - Front End<br/>
 Development Period: May - June 2022<br/>
@@ -53,11 +51,36 @@ Instagram Clone is developed using React Native framework which is a powerful Ja
 
 ## Project Screenshots
 
-![Screenshot_2022-07-16-18-02-48-868_com instagramclone](https://github.com/rushik008/Instagram-Clone/assets/101036053/09a747c8-1ea2-4d9e-bb51-28a0b650ad37)
-![Screenshot_2022-07-16-18-02-58-219_com instagramclone](https://github.com/rushik008/Instagram-Clone/assets/101036053/bac7a062-9159-485b-bc86-73f416321b08)
-![Screenshot_2022-07-16-18-03-14-680_com instagramclone](https://github.com/rushik008/Instagram-Clone/assets/101036053/9e3e96b9-4616-4a17-804e-52d11e13b9b6)
-![Screenshot_2022-07-16-18-03-19-728_com instagramclone](https://github.com/rushik008/Instagram-Clone/assets/101036053/65fb13c3-0213-43c5-a7b3-3d9c41d1fb63)
 
+<br/>
+  <h3 align="center">Home Page</h3>
+  <p align="center">
+<img src="https://github.com/rushik008/Instagram-Clone/assets/101036053/c27037b8-38c7-4139-bd66-0c556e2d6d56" alt="Home Page" width="400px" height="800px">
+  </p>
+<br/>
+ 
+
+  <h3 align="center">Home Page</h3>
+  <p align="center">
+<img src="https://github.com/rushik008/Instagram-Clone/assets/101036053/11985178-3594-4a53-baa2-e5e619be7caf" alt="Home Page" width="400px" height="800px">
+  </p>
+<br/>
+
+
+  <h3 align="center">Explore Page</h3>
+  <p align="center">
+<img src="https://github.com/rushik008/Instagram-Clone/assets/101036053/8c024ca5-5294-4958-b1c7-c9067424b3b4" alt="Explore Page" width="400px" height="800px">
+  </p>
+<br/>
+
+
+  <h3 align="center">Profile Page</h3>
+  <p align="center">
+<img src="https://github.com/rushik008/Instagram-Clone/assets/101036053/773755a3-2120-437b-989f-209dc09c4849" alt="Profile Page" width="400px" height="800px">
+  </p>
+<br/>
+   
+   
 ## Authors
 
 * **Rushik Rathod** - *Mobile App Developer || Computer Science Student* - [Rushik Rathod](https://github.com/rushik008/) - *Developed Instagram Clone Front-end*
